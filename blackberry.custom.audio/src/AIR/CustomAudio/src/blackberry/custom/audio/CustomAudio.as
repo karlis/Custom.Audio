@@ -63,8 +63,9 @@ package blackberry.custom.audio
 		}
 		
 		public function stopChannel(eSoundID:Number):void {
+		  if (soundChannels[eSoundID]){ 
 				soundChannels[eSoundID].stop();
-			}
+		  }
 		}
 				
 	}
